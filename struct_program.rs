@@ -20,5 +20,5 @@ fn main() {
     };
 
     user1.active = false;
-    println!("{}", user2.active);
+    println!("{}", user2.active); //prints ture
 }
