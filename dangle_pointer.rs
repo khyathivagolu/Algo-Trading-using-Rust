@@ -1,3 +1,4 @@
+//errorneous program
 fn main() {
     let reference_to_nothing = dangle();
 }
@@ -5,9 +6,9 @@ fn main() {
 fn dangle() -> &String {
     let s = String::from("hello");
 
-    &s
+    &s 
 }
-// rectified program
+//rectified program
 /*
 fn main() {
     let reference_to_nothing = dangle();
