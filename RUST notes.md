@@ -1,8 +1,8 @@
-17th to 20th of May, 2021
-
-
-Basics of the programming language RUST. 
+# H1 **Basics of the programming language RUST.**
+ 
 ---
+
+
 The basics, including the installation, how to write the hello world program, and some basic commands to use cargo.
 Implementation of the guessing game in Rust using cargo. 
 
@@ -15,23 +15,29 @@ cargo build – to compile create an executable file in another directory
 cargo run – to compile the project and run the executable
 
 cargo check – to check the rust program for compilation errors without actually creating the executable 
+
 ---
-Variables and mutability.  
+
+**Variables and mutability.**  
 keywords: 
 let - to declare a variable (def: immutable)
 let mut - mutable variable
 const - to declare constants. must specify type annotation.
 
 Shadowing of variables - allows reuse of variable names and type conversions (unlike mutable variables)
+
 ---
-Datatypes in Rust. 
+
+**Datatypes in Rust.** 
 Data types can be classified into scalars and compounds. 
 Under scalars, we have integer types, floating-point types, Boolean types, and character types. We also looked at some arithmetic operations.  
 Under compound types, we have a tuple type and arrays. 
 Arrays have a fixed length unlike vectors. 
 We also looked at the various annotations for these different types.
+
 ---
-Functions:
+
+**Functions**
 Type must be specified with every function parameter.
 Expressions vs statements: Expressions don't end with a semi-colon (results in mismatched types error). 
 eg. {
@@ -42,10 +48,14 @@ Return type is specified using ->
 eg. fn five() -> i32 {
     5
 }
+
 ---
+ 
 Comments: // for single line comments
+
 ---
-Control flow:
+
+**Control flow**
 
 if-else syntax:
 if condition {
@@ -68,9 +78,10 @@ while condition {
 for number in range {
        ...
     }
+    
 ---
 
-Ownership:
+**Ownership**
 heap vs stack: accessing heap data is slow while stack data can be accessed quickly
 ownership is required for managing heap data.
 ownership rules:
@@ -109,6 +120,7 @@ Eg. array a = [1, 2, 3, 4, 5];
 let slice = &a[1..3]; (type &[i32])
 
 ---
+
 Structs
 Initialization-
 struct User {
@@ -134,4 +146,9 @@ Printing structs - use {:?} or {:#?} in print statement along with #[derive(Debu
 Method Syntax - Methods are like functions but they are defined within the context of the struct 
 impl Struct block eg. rect1.area() 
 Associated functions don’t take self as a parameter eg. String::from
+
+---
+
+Enums:
+
 ---
