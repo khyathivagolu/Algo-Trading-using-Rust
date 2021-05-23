@@ -1,10 +1,8 @@
-# H1 **Basics of the programming language RUST.**
- 
+# **Basics of the programming language RUST.**
+
 ---
 
-
-The basics, including the installation, how to write the hello world program, and some basic commands to use cargo.
-Implementation of the guessing game in Rust using cargo. 
+Running a rust program: create
 
 Some important cargo commands:
 
@@ -19,7 +17,7 @@ cargo check – to check the rust program for compilation errors without actuall
 ---
 
 **Variables and mutability.**  
-keywords: 
+keywords:
 let - to declare a variable (def: immutable)
 let mut - mutable variable
 const - to declare constants. must specify type annotation.
@@ -28,11 +26,11 @@ Shadowing of variables - allows reuse of variable names and type conversions (un
 
 ---
 
-**Datatypes in Rust.** 
-Data types can be classified into scalars and compounds. 
+**Datatypes in Rust.**
+Data types can be classified into scalars and compounds.
 Under scalars, we have integer types, floating-point types, Boolean types, and character types. We also looked at some arithmetic operations.  
-Under compound types, we have a tuple type and arrays. 
-Arrays have a fixed length unlike vectors. 
+Under compound types, we have a tuple type and arrays.
+Arrays have a fixed length unlike vectors.
 We also looked at the various annotations for these different types.
 
 ---
@@ -50,7 +48,7 @@ eg. fn five() -> i32 {
 }
 
 ---
- 
+
 Comments: // for single line comments
 
 ---
@@ -140,6 +138,7 @@ let user1 = User {
 Can be done using other struct instances as well
 Tuple structs - struct Point(i32, i32, i32);
 let origin = Point(0, 0, 0);
+
 
 Ownership of Struct data - Structs use owned data types like String (cant use &str)
 Printing structs - use {:?} or {:#?} in print statement along with #[derive(Debug)] just before the struct definition
