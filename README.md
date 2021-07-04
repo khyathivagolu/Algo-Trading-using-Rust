@@ -1,5 +1,6 @@
 # Algo Trading Internship
 
-To run Build Training Dataset:
-
+### Build Training Dataset
+```
 $ cargo run --bin build-training-data
+```
