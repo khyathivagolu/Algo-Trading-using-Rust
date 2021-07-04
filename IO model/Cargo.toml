@@ -1,0 +1,21 @@
+[package]
+name = "trading-engine"
+version = "0.1.0"
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+csv = "1.1"
+chrono = "0.4"
+polars = "0.14.4"
+serde = { version = "1.0", features = ["derive"] }
+
+[features]
+parquet = ["polars/parquet"]
+pivot = ["polars/pivot"]
+ipc = ["polars/ipc"]
+downsample = ["polars/downsample"]
+is_in = ["polars/is_in"]
+
+default = ["pivot", "parquet", "downsample", "ipc", "is_in", "polars/repeat_by"]
