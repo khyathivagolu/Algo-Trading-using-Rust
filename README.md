@@ -1,2 +1,2 @@
-# Algo-Trading-
-Internship
+# Algo-Trading
+Glue Labs Private Limited
